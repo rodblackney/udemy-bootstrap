@@ -8,12 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrapValidator.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>        
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
 
     <header>
 
@@ -21,11 +25,11 @@
         <div class="container">
             <div class="navbar-collapse collapse">       
                 <ul class="nav nav-justified">
-                    <li><a href="#">About The App</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Screenshots</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Support</a></li>                
+                    <li><a data-scroll href="#about">About The App</a></li>
+                    <li><a data-scroll href="#features">Features</a></li>
+                    <li><a data-scroll href="#screenshots">Screenshots</a></li>
+                    <li><a data-scroll href="#download">Download</a></li>
+                    <li><a data-scroll href="#support">Support</a></li>                
                 </ul>
             </div>
         </div>
@@ -72,19 +76,34 @@
         <div class="row">
 
             <div class="col-sm-4"> <!--facebook & twitter-->
-                <div class="blue-circle"></div>
+                <div class="blue-circle animation1">
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-google-plus"></i>
+                    </div>
+                </div>
                 <h3 class="text-uppercase text-center">Facebook and Twitter</h3>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est erat, tristique quis gravida et, mattis vel risus. Vestibulum ante ipsum primis.</p>
             </div>
    
             <div class="col-sm-4"><!--support-->
-                <div class="blue-circle"></div>
+                <div class="blue-circle animation2">
+                    <div>
+                        <i class="fa fa-check"></i>
+                    </div>
+                </div>
                 <h3 class="text-uppercase text-center">Support</h3>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est erat, tristique quis gravida et, mattis vel risus. Vestibulum ante ipsum primis.</p>
             </div>
    
             <div class="col-sm-4"><!--ios & android-->
-                <div class="blue-circle"></div>
+                <div class="blue-circle animation3">
+                    <div>
+                        <i class="fa fa-apple"></i>
+                        <i class="fa fa-android"></i>
+                    </div>
+                </div>
                 <h3 class="text-uppercase text-center">iOS and Android</h3>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut est erat, tristique quis gravida et, mattis vel risus. Vestibulum ante ipsum primis.</p>
             </div>
@@ -107,7 +126,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation1">
+                        <div>
+                            <i class="fa fa-check"></i>
+                        </div>
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -117,7 +140,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation1">
+                        <div>
+                            <i class="fa fa-user"></i>                            
+                        </div>
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -127,7 +154,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation1">
+                        <div>
+                            <i class="fa fa-ticket"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -137,7 +168,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation1">
+                        <div>
+                            <i class="fa fa-youtube-play"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -147,7 +182,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation1">
+                        <div>
+                            <i class="fa fa-check-circle-o"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -165,7 +204,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                  <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation2">
+                        <div>
+                            <i class="fa fa-credit-card"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -175,7 +218,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                  <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation2">
+                        <div>
+                            <i class="fa fa-thumbs-up"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -185,7 +232,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                     <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation2">
+                        <div>
+                            <i class="fa fa-exchange"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -195,7 +246,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation2">
+                        <div>
+                            <i class="fa fa-check-square-o"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div><!--.item-feature-->
 
@@ -205,7 +260,11 @@
                     <p>Consectetur adipiscing elit tristique quis gravida et</p>
                 </div>
                 <div class="col-sm-4 col-sm-pull-8  ">
-                    <div class="blue-circle"></div>
+                    <div class="blue-circle animation2">
+                        <div>
+                            <i class="fa fa-tag"></i>                            
+                        </div>                        
+                    </div>
                 </div>
             </div> <!--.item-feature-->            
 
@@ -265,7 +324,7 @@
         <div class="row">
             <div class="content-downloads clearfix">
                 <div class="phone">
-                    <img src="img/download.png" class="img-responsive">
+                    <img src="img/download.png" class="img-responsive animation1">
                 </div> <!-- .phone -->
 
                 <div class="downloads-empty"></div>
@@ -275,10 +334,12 @@
                         <div class="col-sm-5 col-sm-offset-7">
                             <h2 class="text-center text-uppercase">Choose Your Platform</h2>
                             <section class="platforms text-center">
-                                <div class="col-md-5 col-sm-6">
+                                <div class="col-md-5 col-sm-6 animation2">
+                                    <i class="fa fa-apple"></i>
                                     Download for <b>Apple iOS</b>
                                 </div>
-                                <div class="col-md-5 col-md-offset-1 col-sm-6">
+                                <div class="col-md-5 col-md-offset-1 col-sm-6 animation3">
+                                    <i class="fa fa-android"></i>
                                     Download for <b>Android</b>
                                 </div>
                             </section>
@@ -296,14 +357,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <form id="form" action="">
+                <form id="form" action="ajaxSubmit.php">
 
                     <div class="form-group">
-                    <input class="form-control" type="text" placeholder="name" name="name">
+                    <input class="form-control" type="text" placeholder="name" name="name" required>
                     </div>
 
                     <div class="form-group">
-                    <input class="form-control" type="email" placeholder="email" name="email">
+                    <input class="form-control" type="email" placeholder="email" name="email" required>
                     </div>
 
                     <div class="form-group">
@@ -326,10 +387,12 @@
     <p class="text-center text-uppercase">All Rights Reserved 2015.</p>
 </footer>
 
-       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/bootstrapValidator.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
